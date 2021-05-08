@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/border"
+    android:padding="8dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_weight="7.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+    <TextView
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BE"
+        android:id="@+id/student_class"/>
+
+    <TextView
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="division"
+        android:id="@+id/division"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/second"
+        android:layout_below="@id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+    <TextView
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_weight="5"
+        android:layout_below="@id/division"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="subject"
+        android:id="@+id/subject"/>
+
+
+
+    <Button
+        android:gravity="center"
+        android:layout_weight="5"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColor="@color/white"
+        style="?attr/borderlessButtonStyle"
+        android:background="@color/loginbgd"
+        android:layout_toEndOf="@+id/division"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enter attendance"
+        android:id="@+id/enter_attendance"/>
+
+    </LinearLayout>
+
+        </RelativeLayout>
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:padding="1dp"
+        android:gravity="center"
+        android:layout_weight="2.7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="99.99 %"
+        android:id="@+id/persent_percent"/>
+
+    </LinearLayout>
+</RelativeLayout>

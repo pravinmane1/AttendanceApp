@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/select_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <Spinner
+            android:id="@+id/course_spinner"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="200dp" />
+
+
+        <Spinner
+            android:id="@+id/branch_spinner"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/course_spinner"
+            android:gravity="center"
+            android:minWidth="200dp" />
+
+        <Spinner
+            android:id="@+id/subject"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/branch_spinner"
+            android:gravity="center"
+            android:minWidth="200dp" />
+    </LinearLayout>
+
+</RelativeLayout>

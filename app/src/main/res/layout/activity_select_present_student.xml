@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+        android:src="@drawable/ic_action_back"
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_toEndOf="@+id/back"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Select"
+        android:textColor="@color/blueA200"
+        android:textSize="26dp" />
+
+
+    <TextView
+        android:id="@+id/present_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Select Present Students" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/present_label">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:overScrollMode="never"
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                style="?attr/borderlessButtonStyle"
+                android:background="@color/loginbgd"
+                android:textColor="@color/white"
+                android:id="@+id/mark_as_present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycler_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:text="mark as present" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_margin="20dp"
+        android:textSize="26dp"
+        android:textColor="@color/blueA200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Classes"
+        android:id="@+id/title"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="visible"
+        android:layout_below="@+id/title"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/emptyl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recycler_view">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/empty"
+            android:src="@drawable/notimetable"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <TextView
+            android:id="@+id/info"
+            android:textSize="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Class present"
+            android:layout_below="@+id/empty"/>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add classes to create timetable"
+            android:layout_below="@+id/info"/>
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:src="@drawable/ic_action_plus"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"/>
+</RelativeLayout>

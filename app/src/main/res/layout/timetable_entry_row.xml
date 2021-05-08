@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:padding="5dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/class_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Computer branch"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/division_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Division A"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/subject_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="database management system"
+                android:textSize="22dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_action_edit" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/edit"
+                android:src="@drawable/ic_action_delete" />
+        </RelativeLayout>
+    </LinearLayout>
+
+<!--    <View-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1sp"-->
+<!--        android:layout_below="@+id/linear"-->
+<!--        android:background="@color/loginbg"/>-->
+
+
+</RelativeLayout>

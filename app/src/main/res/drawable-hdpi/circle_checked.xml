@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <!--            <solid android:color="#C7FFBB"/>-->
+            <size android:width="120dp" android:height="120dp"/>
+            <stroke android:width="2dp" android:color="@color/black"/>
+            <!--            <gradient android:angle="135" android:startColor="#14a34b" android:endColor="#0b4d71"/>-->
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_action_tick_blue"/>
+</layer-list>

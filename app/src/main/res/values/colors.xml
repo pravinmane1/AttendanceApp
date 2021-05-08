@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#6469F8</color>
+
+    <color name="lightGreen">#E5FAF3</color>
+    <color name="lightYellow">#FBFFCA</color>
+
+    <color name="lightRed">#FAE5E5</color>
+    <color name="brown">#EC615B</color>
+    <color name="green">#29eb29</color>
+    <color name="dgreen">#038c03</color>
+    <color name="mgreen">#4c9b08</color>
+    <color name="darkBlue">#0519FA</color>
+    <color name="header">#e1222222</color>
+    <color name="dheader">#f4181818</color>
+    <color name="white" >#ffffff</color>
+    <color name="loginbg">#A8ABFF</color>
+    <color name="loginbgd">#8A8EF8</color>
+
+    <color name="lightgreen">#FFF1FFF1</color>
+    <color name="mildwhite">#e7dfdf</color>
+    <color name="wallet">#FFFAFAFA</color>
+    <color name="lighestgray">#FFF7F7F7</color>
+    <!--<color name="lightwhite">#e9e9f5</color>-->
+    <color name="lightwhite">#eceff1</color>
+    <color name="yellow">#FBDF1B</color>
+    <color name="indigo">#5858FC</color>
+    <color name="blueA200">#5E76ED</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="light_gray">#FFEDEDED</color>
+    <color name="border_gray">#FFEDEDED</color>
+    <color name="dark_gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="red">#FF0000</color>
+    <color name="neongreen">#b0f709</color>
+    <color name="black">#000001</color>
+    <color name="dustwhite">#fafafa</color>
+    <color name="blue">#0000FF</color>
+    <color name="navy">#000080</color>
+    <color name="light_green">#0fe81d</color>
+    <color name="heart">#989C98</color>
+    <color name="bg">#f5f5f5</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_container"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    android:layout_width="match_parent"
+    android:theme="@style/AppTheme"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:background="@drawable/bottom_sheet_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_layout">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10th"
+            android:textSize="24dp"
+            android:id="@+id/class_name"
+            android:layout_margin="5dp"/>
+
+
+        <ImageView
+            android:id="@+id/sub_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/subjectnew"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/class_name"/>
+
+
+        <TextView
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/sub_img"
+            android:textSize="20dp"
+            android:id="@+id/subjects_label"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/class_name"
+            android:text="Subjects : "/>
+
+        <TextView
+            android:id="@+id/add_subject"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/subjects_label"
+            android:layout_below="@id/class_name"
+            android:layout_marginTop="24dp"
+            android:text="add + "/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:overScrollMode="never"
+            android:id="@+id/subjectlist"
+            android:layout_marginStart="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subjects_label"/>
+
+        <ImageView
+            android:id="@+id/div_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/divisionnew"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/subjectlist"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/div_img"
+            android:textSize="20dp"
+            android:id="@+id/divisions_label"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subjectlist"
+            android:text="Divisions : "/>
+
+        <TextView
+            android:id="@+id/add_division"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/subjects_label"
+            android:layout_below="@id/subjectlist"
+            android:layout_marginTop="24dp"
+            android:text="add + "/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:overScrollMode="never"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/divisionlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divisions_label"/>
+
+        <Button
+            android:background="@color/loginbg"
+            style="?attr/borderlessButtonStyle"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/delete"
+            android:text="delete"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divisionlist"/>
+
+    </RelativeLayout>
+</ScrollView>
