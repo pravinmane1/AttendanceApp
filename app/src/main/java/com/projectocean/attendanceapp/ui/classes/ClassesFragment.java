@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -449,15 +450,22 @@ public class ClassesFragment extends Fragment {
 
 
                                         if (!name.getText().toString().equals("") && !strength.getText().toString().equals("")) {
-                                            Division division = new Division();
-                                            division.setId(name.getText().toString());
-                                            division.setStrength(Integer.parseInt(strength.getText().toString()));
 
-                                            db.getReference("classData")
-                                                    .child(uid)
-                                                    .child(classNameStr)
-                                                    .child("divisions").child(name.getText().toString()).setValue(division);
-                                            dialog.dismiss();
+                                            if(Integer.parseInt(strength.getText().toString())<200){
+                                                Division division = new Division();
+                                                division.setId(name.getText().toString());
+                                                division.setStrength(Integer.parseInt(strength.getText().toString()));
+
+                                                db.getReference("classData")
+                                                        .child(uid)
+                                                        .child(classNameStr)
+                                                        .child("divisions").child(name.getText().toString()).setValue(division);
+                                                dialog.dismiss();
+                                            }
+                                            else{
+                                                Toast.makeText(getActivity(), "Sorry, Class strength is limited to 200", Toast.LENGTH_SHORT).show();
+                                            }
+
                                         }
 
                                     }

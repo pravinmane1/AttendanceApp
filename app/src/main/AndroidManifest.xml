@@ -3,13 +3,14 @@
     package="com.projectocean.attendanceapp">
 
     <application
+        android:name="com.projectocean.attendanceapp.AttendanceApp"
         android:allowBackup="true"
         android:icon="@drawable/classroom"
         android:label="@string/app_name"
         android:roundIcon="@drawable/classroom"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AttendanceDayActivity"></activity>
+        <activity android:name=".AttendanceDayActivity" />
         <activity android:name=".SelectPresentStudentActivity" />
         <activity android:name=".ClassDetailsActivity" />
         <activity
